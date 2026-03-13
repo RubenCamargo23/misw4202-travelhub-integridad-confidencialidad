@@ -1,0 +1,43 @@
+<div class="login-wrapper">
+  <div class="login-card">
+    <h1 class="brand">TravelHub</h1>
+    <p class="subtitle">Integridad · Confidencialidad</p>
+
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <div class="field">
+        <label for="username">Usuario</label>
+        <input
+          id="username"
+          type="text"
+          [(ngModel)]="username"
+          name="username"
+          required
+          placeholder="Ej: admin_ar"
+          autocomplete="username"
+        />
+      </div>
+
+      <div class="field">
+        <label for="password">Contraseña</label>
+        <input
+          id="password"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+          required
+          placeholder="••••••••"
+          autocomplete="current-password"
+        />
+      </div>
+
+      <div class="error-banner" *ngIf="errorMessage">
+        {{ errorMessage }}
+      </div>
+
+      <button type="submit" [disabled]="loading || !loginForm.valid">
+        <span *ngIf="!loading">Iniciar sesión</span>
+        <span *ngIf="loading">Cargando…</span>
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+/Users/rubencamargoortegon/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+ * Serving Flask app 'app'
+ * Debug mode: off
+2026-03-13 12:49:32 [werkzeug] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8002
+ * Running on http://192.168.68.114:8002
+2026-03-13 12:49:32 [werkzeug] INFO [33mPress CTRL+C to quit[0m
+2026-03-13 12:49:36 [reservas-service] INFO GET_RESERVAS | usuario=user_co | pais=CO | total=2
+2026-03-13 12:49:36 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:49:36] "GET /reservas HTTP/1.1" 200 -
+2026-03-13 12:49:36 [reservas-service] WARNING ABAC_DENIED | usuario=user_co | pais_usuario=CO | pais_reserva=AR | reserva_id=1
+2026-03-13 12:49:36 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:49:36] "[31m[1mGET /reservas/1 HTTP/1.1[0m" 403 -
+2026-03-13 12:49:36 [reservas-service] INFO GET_RESERVA_OK | usuario=admin_ar | reserva_id=1 | pais=AR
+2026-03-13 12:49:36 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:49:36] "GET /reservas/1 HTTP/1.1" 200 -
+2026-03-13 12:49:36 [reservas-service] INFO RESERVA_UPDATED | usuario=admin_ar | reserva_id=1
+2026-03-13 12:49:36 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:49:36] "PUT /reservas/1 HTTP/1.1" 200 -
+2026-03-13 12:49:36 [reservas-service] WARNING IMMUTABILITY_BLOCKED | usuario=admin_ar | reserva_id=2 | estado=CONFIRMED
+2026-03-13 12:49:36 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:49:36] "[31m[1mPUT /reservas/2 HTTP/1.1[0m" 403 -
+2026-03-13 12:57:33 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:57:33] "OPTIONS /reservas HTTP/1.1" 200 -
+2026-03-13 12:57:33 [reservas-service] INFO GET_RESERVAS | usuario=admin_ar | pais=AR | total=2
+2026-03-13 12:57:33 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:57:33] "GET /reservas HTTP/1.1" 200 -
+2026-03-13 12:58:18 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:58:18] "OPTIONS /reservas HTTP/1.1" 200 -
+2026-03-13 12:58:18 [reservas-service] INFO GET_RESERVAS | usuario=user_co | pais=CO | total=2
+2026-03-13 12:58:18 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:58:18] "GET /reservas HTTP/1.1" 200 -
+2026-03-13 12:58:54 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:58:54] "OPTIONS /reservas HTTP/1.1" 200 -
+2026-03-13 12:58:54 [reservas-service] INFO GET_RESERVAS | usuario=admin_ar | pais=AR | total=2
+2026-03-13 12:58:54 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:58:54] "GET /reservas HTTP/1.1" 200 -
+2026-03-13 12:59:06 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:59:06] "OPTIONS /reservas HTTP/1.1" 200 -
+2026-03-13 12:59:06 [reservas-service] INFO GET_RESERVAS | usuario=user_co | pais=CO | total=2
+2026-03-13 12:59:06 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 12:59:06] "GET /reservas HTTP/1.1" 200 -
+2026-03-13 13:00:43 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:00:43] "OPTIONS /reservas HTTP/1.1" 200 -
+2026-03-13 13:00:43 [reservas-service] INFO GET_RESERVAS | usuario=user_co | pais=CO | total=2
+2026-03-13 13:00:43 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:00:43] "GET /reservas HTTP/1.1" 200 -
+2026-03-13 13:00:46 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:00:46] "OPTIONS /reservas/1 HTTP/1.1" 200 -
+2026-03-13 13:00:46 [reservas-service] WARNING ABAC_DENIED | usuario=user_co | pais_usuario=CO | pais_reserva=AR | reserva_id=1
+2026-03-13 13:00:46 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:00:46] "[31m[1mGET /reservas/1 HTTP/1.1[0m" 403 -
+2026-03-13 13:00:51 [reservas-service] WARNING ABAC_DENIED | usuario=user_co | pais_usuario=CO | pais_reserva=AR | reserva_id=1
+2026-03-13 13:00:51 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:00:51] "[31m[1mGET /reservas/1 HTTP/1.1[0m" 403 -
+2026-03-13 13:02:42 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:02:42] "OPTIONS /reservas HTTP/1.1" 200 -
+2026-03-13 13:02:42 [reservas-service] INFO GET_RESERVAS | usuario=admin_ar | pais=AR | total=2
+2026-03-13 13:02:42 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:02:42] "GET /reservas HTTP/1.1" 200 -
+2026-03-13 13:02:58 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:02:58] "OPTIONS /reservas/2 HTTP/1.1" 200 -
+2026-03-13 13:02:58 [reservas-service] WARNING IMMUTABILITY_BLOCKED | usuario=admin_ar | reserva_id=2 | estado=CONFIRMED
+2026-03-13 13:02:58 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:02:58] "[31m[1mPUT /reservas/2 HTTP/1.1[0m" 403 -
+2026-03-13 13:04:47 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:04:47] "OPTIONS /reservas/1 HTTP/1.1" 200 -
+2026-03-13 13:04:47 [reservas-service] INFO GET_RESERVA_OK | usuario=admin_ar | reserva_id=1 | pais=AR
+2026-03-13 13:04:47 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:04:47] "GET /reservas/1 HTTP/1.1" 200 -
+2026-03-13 13:05:01 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:05:01] "OPTIONS /reservas HTTP/1.1" 200 -
+2026-03-13 13:05:01 [reservas-service] INFO GET_RESERVAS | usuario=user_co | pais=CO | total=2
+2026-03-13 13:05:01 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:05:01] "GET /reservas HTTP/1.1" 200 -
+2026-03-13 13:05:05 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:05:05] "OPTIONS /reservas/1 HTTP/1.1" 200 -
+2026-03-13 13:05:05 [reservas-service] WARNING ABAC_DENIED | usuario=user_co | pais_usuario=CO | pais_reserva=AR | reserva_id=1
+2026-03-13 13:05:05 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:05:05] "[31m[1mGET /reservas/1 HTTP/1.1[0m" 403 -
+2026-03-13 13:05:16 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:05:16] "OPTIONS /reservas/1 HTTP/1.1" 200 -
+2026-03-13 13:05:16 [reservas-service] WARNING ABAC_DENIED | usuario=user_co | pais_usuario=CO | pais_reserva=AR | reserva_id=1
+2026-03-13 13:05:16 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:05:16] "[31m[1mGET /reservas/1 HTTP/1.1[0m" 403 -
+2026-03-13 13:05:57 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:05:57] "OPTIONS /reservas/4 HTTP/1.1" 200 -
+2026-03-13 13:05:57 [reservas-service] WARNING IMMUTABILITY_BLOCKED | usuario=user_co | reserva_id=4 | estado=CONFIRMED
+2026-03-13 13:05:57 [werkzeug] INFO 127.0.0.1 - - [13/Mar/2026 13:05:57] "[31m[1mPUT /reservas/4 HTTP/1.1[0m" 403 -
